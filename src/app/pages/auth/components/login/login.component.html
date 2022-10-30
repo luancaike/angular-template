@@ -1,0 +1,36 @@
+<main class="shadow-sm p-3 mb-5 bg-body rounded form-signin w-100 m-auto">
+  <form [formGroup]="form">
+    <img
+      class="mb-4 m-auto"
+      src="https://angular.io/assets/images/logos/angular/shield-large.svg"
+      alt=""
+      width="72"
+      height="57"
+    />
+    <h1 class="h3 mb-3 fw-normal text-center">Faça seu Login</h1>
+
+    <div class="mb-3">
+      <label class="form-label">E-mail</label>
+      <input
+        formControlName="email"
+        type="email"
+        class="form-control"
+        placeholder="name@example.com"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Senha</label>
+      <input
+        formControlName="password"
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+    </div>
+    <button class="w-100 btn btn-secondary mt-3" (click)="submit()">
+      Entrar
+    </button>
+  </form>
+</main>

@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">
+      {{ message }}
+    </p>
+  </div>
+  <div class="card-footer text-muted d-flex justify-content-end">
+    <button class="btn btn-outline-danger me-2" (click)="confirm(false)">
+      {{ btnCancelText }}
+    </button>
+    <button class="btn btn-secondary" (click)="confirm(true)">
+      {{ btnOkText }}
+    </button>
+  </div>
+</div>

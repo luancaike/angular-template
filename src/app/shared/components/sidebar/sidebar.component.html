@@ -1,0 +1,62 @@
+<div
+  class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
+  style="width: 250px; height: 100%"
+>
+  <a
+    href="/"
+    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+  >
+    <img
+      class="me-2"
+      src="https://angular.io/assets/images/logos/angular/shield-large.svg"
+      alt=""
+      width="40"
+      height="32"
+    />
+    <span class="fs-4">App</span>
+  </a>
+  <hr />
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        class="nav-link"
+        aria-current="page"
+      >
+        <i class="bi bi-house pe-none me-2"></i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="/users" routerLinkActive="active" class="nav-link">
+        <i class="bi bi-person-circle pe-none me-2"></i>
+        Users
+      </a>
+    </li>
+  </ul>
+  <hr />
+  <div class="dropdown" ngbDropdown>
+    <div
+      class="d-flex align-items-center text-white text-decoration-none justify-content-between"
+      role="button"
+      ngbDropdownToggle
+    >
+      <strong>{{ user?.email }}</strong>
+    </div>
+    <ul
+      class="dropdown-menu dropdown-menu-dark text-small shadow"
+      ngbDropdownMenu
+    >
+      <li
+        ngbDropdownItem
+        role="button"
+        routerLink="/auth/login"
+        class="dropdown-item d-flex align-items-center justify-content-between"
+      >
+        <span>Logout</span>
+        <i class="bi bi-box-arrow-right"></i>
+      </li>
+    </ul>
+  </div>
+</div>

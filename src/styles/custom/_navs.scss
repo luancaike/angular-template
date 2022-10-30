@@ -1,0 +1,13 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+.nav-pills {
+  .nav-link {
+    color: $white;
+  }
+  .nav-link.active,
+  &.show > .nav-link {
+    color: $dark;
+    background-color: $white;
+  }
+}
